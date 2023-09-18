@@ -1,0 +1,13 @@
+.signup-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+.sign-in-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
