@@ -4,17 +4,21 @@ import Home from './components/Home'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import { DndProvider } from 'react-dnd'
+import { HTML5Backend } from 'react-dnd-html5-backend'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path='/' element={<Home />} />
-        </Routes>
-      </Router>
+      <DndProvider backend={HTML5Backend}>
+        <Router>
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </Router>
+      </DndProvider>
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import SignIn from './Signin'
 import SignUp from './SignUp'
 import AuthDetails from './AuthDetails'
+import Dnd from './Dnd'
 // import ImageGrid from './ImageGrid'
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <SignIn />
       <SignUp />
       <AuthDetails />
+      <Dnd />
       {/* <ImageGrid /> */}
     </div>
   )
